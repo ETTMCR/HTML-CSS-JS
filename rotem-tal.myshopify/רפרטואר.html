@@ -1,0 +1,254 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style><!--
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+img#img01:hover {
+    cursor: default;
+}
+
+div#myModal:hover {
+    cursor: zoom-out;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+--></style>
+<style><!--
+body {
+  margin: 0;
+  //font-family: Arial, Helvetica, sans-serif;
+  //font-size: 12px;
+  //line-height: 20px;
+  color: #E71E98!important;
+ // background-color: #262528;
+  //background: url(../img/bg.jpg) 0 0 repeat;
+}
+--></style>
+<style><!--
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+/* parameters of modal */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 50%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myImg:hover{
+  cursor: zoom-in;
+}
+
+#myImg {
+padding-left :10px;
+}
+
+/* On screens that are 700px or less, set the ... */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+--></style>
+<h1 style="direction: rtl; text-align: center;"></h1>
+<h1 style="color: #e92499; text-align: center;">מבחר תכשיטים וכלי בית</h1>
+<h3 style="direction: rtl; text-align: center;"><span style="color: #e92499;">לחיצה על השם למעבר לדף המוצר</span></h3>
+<!-- https://stackoverflow.com/questions/47798971/several-modal-images-on-page -->
+<p><!----list of images--></p>
+<!-- Photo Grid -->
+<div class="row">
+<div class="column">
+<p><img class="myImages" title="" id="myImg" src="https://cdn.shopify.com/s/files/1/0290/4624/3388/products/DSC_0205_1024x1024@2x.jpg?v=1593957756" alt="פיצ- לבן
+" width="300" height="200" /> <a href="https://rotem-tal.myshopify.com/collections/%D7%A9%D7%A8%D7%A9%D7%A8%D7%90%D7%95%D7%AA-%D7%A4%D7%95%D7%A4/products/%D7%A4%D7%99%D7%A6-%D7%9C%D7%91%D7%9F" target="_blank" rel="noopener noreferrer"> פיצ- לבן <br /> </a></p>
+<p><img class="myImages" title="" id="myImg" src="https://cdn.shopify.com/s/files/1/0290/4624/3388/products/DSC_9049_1024x1024@2x.jpg?v=1593957797" alt="פפה הפיל
+" width="300" height="200" /><a href="https://rotem-tal.myshopify.com/collections/%D7%9C%D7%92%D7%91%D7%A8/products/%D7%A4%D7%A4%D7%94-%D7%94%D7%A4%D7%99%D7%9C" target="_blank" rel="noopener noreferrer">פפה הפיל <br /> </a></p>
+<p><img class="myImages" title="" id="myImg" src="https://cdn.shopify.com/s/files/1/0290/4624/3388/products/DSC_7299_1024x1024@2x.jpg?v=1593955490" alt="עגילי גשם- שחור מט" width="300" height="200" /><a href="https://rotem-tal.myshopify.com/collections/%D7%A2%D7%92%D7%99%D7%9C%D7%99%D7%9D/products/%D7%A2%D7%92%D7%99%D7%9C%D7%99-%D7%92%D7%A9%D7%9D-%D7%95%D7%A8%D7%95%D7%93" target="_blank" rel="noopener noreferrer"> עגילי גשם- שחור מט<br /> </a></p>
+<p><img class="myImages" title="" id="myImg" src="https://cdn.shopify.com/s/files/1/0290/4624/3388/products/DSC_1276_1024x1024@2x.jpg?v=1645557824" alt="עגילי משרביה
+" width="300" height="200" /><a href="https://rotem-tal.myshopify.com/collections/%D7%A2%D7%92%D7%99%D7%9C%D7%99%D7%9D/products/%D7%A2%D7%92%D7%99%D7%9C%D7%99-%D7%9E%D7%A9%D7%A8%D7%91%D7%99%D7%94" target="_blank" rel="noopener noreferrer"> עגילי משרביה <br /> </a></p>
+<p><img class="myImages" title="" id="myImg" src="https://cdn.shopify.com/s/files/1/0290/4624/3388/products/DSC_8489_1024x1024@2x.jpg?v=1593954988" alt="טבעת שחור לבן
+" width="300" height="200" /><a href="https://rotem-tal.myshopify.com/collections/%D7%9C%D7%92%D7%91%D7%A8/products/%D7%98%D7%91%D7%A2%D7%AA-%D7%A9%D7%97%D7%95%D7%A8-%D7%9C%D7%91%D7%9F" target="_blank" rel="noopener noreferrer">טבעת שחור לבן <br /> </a></p>
+</div>
+<div class="column">
+<p><img class="myImages" title="" id="myImg" src="https://cdn.shopify.com/s/files/1/0290/4624/3388/products/IMG_20220307_122657_1024x1024@2x.jpg?v=1648988643" alt="ספל וצלוחית
+" width="300" height="200" /><a href="https://rotem-tal.myshopify.com/products/%D7%A1%D7%A4%D7%9C%D7%99%D7%9D" target="_blank" rel="noopener noreferrer">ספל וצלוחית <br /> </a></p>
+<p><img class="myImages" title="" id="myImg" src="https://cdn.shopify.com/s/files/1/0290/4624/3388/products/DSC_1637_1024x1024@2x.jpg?v=1648983119" alt="ואזה גבוהה
+" width="300" height="200" /><a href="https://rotem-tal.myshopify.com/collections/%D7%9C%D7%91%D7%99%D7%AA/products/%D7%95%D7%90%D7%96%D7%94-%D7%92%D7%91%D7%95%D7%94%D7%94" target="_blank" rel="noopener noreferrer">ואזה גבוהה <br /> </a></p>
+<p><img class="myImages" title="" id="myImg" src="https://cdn.shopify.com/s/files/1/0290/4624/3388/products/DSC_1363_1024x1024@2x.jpg?v=1645557596" alt="עגילי וקטור
+" width="300" height="200" /><a href="https://rotem-tal.myshopify.com/collections/%D7%A2%D7%92%D7%99%D7%9C%D7%99%D7%9D/products/%D7%A2%D7%92%D7%99%D7%9C%D7%99-%D7%95%D7%A7%D7%98%D7%95%D7%A8" target="_blank" rel="noopener noreferrer">עגילי וקטור <br /> </a></p>
+<p><img class="myImages" title="" id="myImg" src="https://cdn.shopify.com/s/files/1/0290/4624/3388/products/DSC_1319_1024x1024@2x.jpg?v=1645557338" alt="עגילי משרביה תלויים
+" width="300" height="200" /><a href="https://rotem-tal.myshopify.com/collections/%D7%A2%D7%92%D7%99%D7%9C%D7%99%D7%9D/products/%D7%A2%D7%92%D7%99%D7%9C%D7%99-%D7%9E%D7%A9%D7%A8%D7%91%D7%99%D7%94-%D7%AA%D7%9C%D7%95%D7%99%D7%99%D7%9D" target="_blank" rel="noopener noreferrer">עגילי משרביה תלויים </a></p>
+</div>
+<div class="column">
+<p><img class="myImages" title="" id="myImg" src="https://cdn.shopify.com/s/files/1/0290/4624/3388/products/DSC_1415_1024x1024@2x.jpg?v=1645557992" alt="שרשרת V משרביה
+" width="300" height="200" /><a href="https://rotem-tal.myshopify.com/collections/necklace/products/%D7%A9%D7%A8%D7%A9%D7%A8%D7%AA-v-%D7%9E%D7%A9%D7%A8%D7%91%D7%99%D7%94" target="_blank" rel="noopener noreferrer">שרשרת V משרביה<br /> </a></p>
+<p><img class="myImages" title="" id="myImg" src="https://cdn.shopify.com/s/files/1/0290/4624/3388/products/IMG_5336_c94c87dd-c1d5-4253-bb8d-c1df500ab8af_1024x1024@2x.jpg?v=1593959571" alt="שרשרת לב קטן- שחור מט
+" width="300" height="200" /><a href="https://rotem-tal.myshopify.com/collections/%D7%A9%D7%A8%D7%A9%D7%A8%D7%90%D7%95%D7%AA-%D7%9C%D7%91%D7%91%D7%95%D7%AA/products/%D7%A9%D7%A8%D7%A9%D7%A8%D7%AA-%D7%9C%D7%91-%D7%A7%D7%98%D7%9F-%D7%A9%D7%97%D7%95%D7%A8-%D7%9E%D7%98" target="_blank" rel="noopener noreferrer">שרשרת לב קטן- שחור מט <br /> </a></p>
+<p><img class="myImages" title="" id="myImg" src="https://cdn.shopify.com/s/files/1/0290/4624/3388/products/DSC_8710_1024x1024@2x.jpg?v=1593958125" alt="קשתות- טורקיז בהיר
+" width="300" height="200" /><a href="https://rotem-tal.myshopify.com/collections/%D7%A7%D7%A9%D7%AA%D7%95%D7%AA/products/%D7%A7%D7%A9%D7%AA%D7%95%D7%AA-%D7%98%D7%95%D7%A8%D7%A7%D7%99%D7%96-%D7%91%D7%94%D7%99%D7%A8" target="_blank" rel="noopener noreferrer">קשתות- טורקיז בהיר <br /> </a></p>
+<p><img class="myImages" title="" id="myImg" src="https://cdn.shopify.com/s/files/1/0290/4624/3388/products/DSC_1006_1024x1024@2x.jpg?v=1645438167" alt="פורצלן שרשרת אותיות
+" width="300" height="200" /><a href="https://rotem-tal.myshopify.com/collections/%D7%98%D7%99%D7%A4%D7%95%D7%AA-%D7%A4%D7%95%D7%A8%D7%A6%D7%9C%D7%9F/products/%D7%A9%D7%A8%D7%A9%D7%A8%D7%AA-%D7%90%D7%95%D7%AA%D7%99%D7%95%D7%AA" target="_blank" rel="noopener noreferrer">פורצלן שרשרת אותיות <br /> </a></p>
+</div>
+<div class="column">
+<p><img class="myImages" title="" id="myImg" src="https://cdn.shopify.com/s/files/1/0290/4624/3388/products/DSC_1516_1024x1024@2x.jpg?v=1645534789" alt="פורצלן שרשרת שש טיפות
+" width="300" height="200" /><a href="https://cdn.shopify.com/s/files/1/0290/4624/3388/products/DSC_1516_1024x1024@2x.jpg?v=1645534789" target="_blank" rel="noopener noreferrer">פורצלן שרשרת שש טיפות <br /> </a></p>
+<p><img class="myImages" title="" id="myImg" src="https://cdn.shopify.com/s/files/1/0290/4624/3388/products/DSC_1529_1024x1024@2x.jpg?v=1645534701" alt="פורצלן שרשרת שתי טיפות
+" width="300" height="200" /><a href="https://rotem-tal.myshopify.com/collections/%D7%98%D7%99%D7%A4%D7%95%D7%AA-%D7%A4%D7%95%D7%A8%D7%A6%D7%9C%D7%9F/products/%D7%A9%D7%A8%D7%A9%D7%A8%D7%AA-%D7%A9%D7%AA%D7%99-%D7%98%D7%99%D7%A4%D7%95%D7%AA" target="_blank" rel="noopener noreferrer">פורצלן שרשרת שתי טיפות <br /> </a></p>
+<p><img class="myImages" title="" id="myImg" src="https://cdn.shopify.com/s/files/1/0290/4624/3388/products/DSC_1972_a6a08963-1771-44bb-b8d8-a48dc0724e26_1024x1024@2x.jpg?v=1648988365" alt="קערה בינונית
+" width="300" height="200" /><a href="https://rotem-tal.myshopify.com/collections/%D7%A7%D7%A2%D7%A8%D7%95%D7%AA/products/%D7%A7%D7%A2%D7%A8%D7%94-%D7%91%D7%99%D7%A0%D7%95%D7%A0%D7%99%D7%AA" target="_blank" rel="noopener noreferrer">קערה בינונית <br /> </a></p>
+<p><img class="myImages" title="" id="myImg" src="https://cdn.shopify.com/s/files/1/0290/4624/3388/products/IMG_5287_1024x1024@2x.jpg?v=1593959710" alt="שרשרת פורסט
+" width="300" height="200" /><a href="https://rotem-tal.myshopify.com/collections/%D7%A9%D7%A8%D7%A9%D7%A8%D7%90%D7%95%D7%AA-%D7%9E%D7%9F-%D7%94%D7%98%D7%91%D7%A2/products/copy-of-%D7%9C%D7%91-%D7%9E%D7%9B%D7%95%D7%A0%D7%A3-%D7%92%D7%93%D7%95%D7%9C" target="_blank" rel="noopener noreferrer">שרשרת פורסט <br /> </a></p>
+</div>
+</div>
+<div id="myModal" class="modal"><span class="close">×</span> <img class="modal-content" id="img01" />
+<div id="caption"></div>
+</div>
+<script>// <![CDATA[
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+// ]]></script>
