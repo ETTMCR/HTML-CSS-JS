@@ -1,5 +1,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style><!--
+@media screen and (min-width: 640px){
+#myImg {
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+#myImg:hover {
+  -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari 3-8 */
+  transform: scale(2); opacity:1!important;
+}
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -61,7 +75,7 @@ div#myModal:hover {
     max-width: 100%;
   }
 }
---></style>
+--&gt;
 <style><!--
 body {
   margin: 0;
@@ -75,7 +89,7 @@ body {
 --></style>
 <style><!--
 #myImg {
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -173,8 +187,9 @@ padding-left :10px;
 }
 --></style>
 <h1 style="direction: rtl; text-align: center;"></h1>
-<h1 style="color: #e92499; text-align: center;">מבחר תכשיטים וכלי בית</h1>
-<h3 style="direction: rtl; text-align: center;"><span style="color: #e92499;">לחיצה על השם למעבר לדף המוצר</span></h3>
+<h1 style="color: #e92499; text-align: center; font-size: 35px;">רפרטואר התכשיטים וכלי הבית</h1>
+<h2 style="direction: rtl; text-align: center;"><span style="color: #e92499; font-size: 25px;">לחיצה על השם למעבר לדף המוצר</span></h2>
+<h3 style="color: #e92499; text-align: center; font-size: 25px;"><span>לחיצה על התמונה למעבר לתמונה גדולה</span></h3>
 <!-- https://stackoverflow.com/questions/47798971/several-modal-images-on-page -->
 <p><!----list of images--></p>
 <!-- Photo Grid -->
